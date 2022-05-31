@@ -1,0 +1,41 @@
+<h1>Add Device Form</h1>
+{{deviceForm?.valid | json}}
+<div mat-dialog-content>
+    <form [formGroup]="deviceForm">
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input formControlName="name" matInput placeholder="Name" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Type</mat-label>
+            <mat-select formControlName="type" placeholder="Type">
+             <mat-option value="Device">DEVICE</mat-option>
+             <mat-option value="Asset">ASSET</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Category</mat-label>
+            <mat-select formControlName="category" placeholder="Category">
+             <mat-option value="Camera">Camera</mat-option>
+             <mat-option value="PLC">PLC</mat-option>
+             <mat-option value="Y">Y</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Latitude</mat-label>
+            <input  formControlName="latitude"  type="number" matInput placeholder="Latitude"/>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Longitude</mat-label>
+            <input formControlName="longitude" type="number" matInput placeholder="Longitude" />
+        </mat-form-field>
+    </form>
+    
+</div>
+
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="basic" mat-dialog-close>Close</button>
+    <button style="margin-left: 8px;"mat-raised-button color="primary" (click)="addDevice()">{{actionBtn}}</button>
+
+</div>

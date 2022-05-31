@@ -1,0 +1,32 @@
+{
+  "devicesList": [
+    {
+      "Id": "1765",
+      "deviceName": "name2",
+      "type": "Asset",
+      "category": "X",
+      "latitude": "98.2",
+      "longitude": "98.3",
+      "id": 2
+    },
+    {
+      "Id": "123",
+      "deviceName": "cam1",
+      "type": "Device",
+      "category": "X",
+      "latitude": "4.3",
+      "longitude": "8.2",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
