@@ -43,7 +43,7 @@ export class DevicesComponent implements OnInit{
       next:(res)=>{
         console.log(res);
         
-        this.dataSource=new MatTableDataSource(res.cartographs);
+        this.dataSource=new MatTableDataSource(res);
         this.dataSource.paginator=this.paginator;
         this.dataSource.sort=this.sort
       },

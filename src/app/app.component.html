@@ -6,8 +6,11 @@
   </mat-toolbar-row>
   </mat-toolbar>
   <mat-sidenav-container style="height:100%">
+    <div class="image">
+  
+    
   <mat-menu #menu="matMenu">
-    <button mat-menu-item routerLink="devices">Devices</button>
+    <button mat-menu-item routerLink="devices">Table of Devices</button>
     <button mat-menu-item routerLink="map">Map</button>
   </mat-menu>
 <!-- <mat-sidenav [(opened)]="opened" mode="side">
@@ -17,4 +20,6 @@
   </mat-list>
 </mat-sidenav> -->
 <router-outlet></router-outlet>
+</div>
 </mat-sidenav-container> 
+

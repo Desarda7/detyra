@@ -31,8 +31,7 @@ export class DialogComponent implements OnInit {
 
    if(this.editData){
      this.actionBtn="Update";
-     this.deviceForm.controls['Id'].setValue(this.editData.Id);
-     this.deviceForm.controls['deviceName'].setValue(this.editData.deviceName);
+     this.deviceForm.controls['name'].setValue(this.editData.name);
      this.deviceForm.controls['type'].setValue(this.editData.type);
      this.deviceForm.controls['category'].setValue(this.editData.category);
      this.deviceForm.controls['latitude'].setValue(this.editData.latitude);
